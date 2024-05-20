@@ -6,8 +6,8 @@ import numpy as np
 import pickle
 import datetime as dt
 import json
-from xgboost import plot_importance
-from xgboost.sklearn import XGBRegressor as XGBR
+#from xgboost import plot_importance
+#from xgboost.sklearn import XGBRegressor as XGBR
 import boto3
 from io import BytesIO
 
