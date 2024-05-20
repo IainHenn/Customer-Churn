@@ -22,6 +22,17 @@ df = conn.read("airtraffic/before_encoding.csv", input_format="csv", ttl=600)
 
 # transform the user_input as we have been transforming the data as before
 def user_inputs():
+
+    '''
+    Have user input data 
+    Continuous? --> Have the user input it into a textbar 
+    Discrete? --> Have user select their decision using a drop down box 
+
+
+    Clean inputted data and clean our training data that we have now
+    '''
+
+
     """
     define inputs should a user input into the app using streamlit's functions
 
@@ -40,6 +51,11 @@ def user_inputs():
     return df
 
 def transform(df):
+
+    '''
+    Transform data and encode it so it's ready to be inputted into the model 
+    '''
+    
     """
     define probability ratio encoding and/or other encodings that you have done.
 
